@@ -1,0 +1,369 @@
+{
+	"info": {
+		"_postman_id": "d00d1a9b-9b1e-47ad-aad3-1c19165b05f3",
+		"name": "SOAINT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. Producto",
+			"item": [
+				{
+					"name": "Crear Producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"televisor\",\r\n  \"precio\":3.5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8700/producto/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8700",
+							"path": [
+								"producto",
+								""
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "programador java",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar Producto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"gaseosa\",\r\n  \"precio\":15.5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8700/producto/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8700",
+							"path": [
+								"producto",
+								"2"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "programador java",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Producto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"gaseosa\",\r\n  \"precio\":15.5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8700/producto/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8700",
+							"path": [
+								"producto",
+								"2"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "programador java",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Producto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8700/producto/listar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8700",
+							"path": [
+								"producto",
+								"listar"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "programador java",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Producto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8700/producto/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8700",
+							"path": [
+								"producto",
+								"1"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "programador java",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "2. Cliente",
+			"item": [
+				{
+					"name": "Crear Cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"ernesto\",\r\n  \"apellido\": \"galarza\",\r\n  \"dni\": \"44441111\",\r\n  \"telefono\": \"9999999\",\r\n  \"email\": \"micorreo@email.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8700/cliente/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8700",
+							"path": [
+								"cliente",
+								""
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "programador java",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar cliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8700/cliente/listar/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8700",
+							"path": [
+								"cliente",
+								"listar",
+								""
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "programador java",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "3. Venta",
+			"item": [
+				{
+					"name": "Crear Venta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"cliente\":{\r\n    \"id\": 1,\r\n    \"nombre\": \"ernesto\",\r\n    \"apellido\": \"galarza\",\r\n    \"dni\": \"44441111\",\r\n    \"telefono\": \"9999999\",\r\n    \"email\": \"micorreo@email.com\"\r\n},\r\n  \"ventaDetalles\": [\r\n   {\r\n    \"producto\":{\r\n    \"id\": 1,\r\n    \"nombre\": \"gaseosa\",\r\n    \"precio\": 15.5\r\n   }}\r\n\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8700/venta/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8700",
+							"path": [
+								"venta",
+								""
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "programador java",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Venta - error",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"cliente\":{\r\n    \"id\": 1,\r\n    \"nombre\": \"ernesto\",\r\n    \"apellido\": \"galarza\",\r\n    \"dni\": \"44441111\",\r\n    \"telefono\": \"9999999\",\r\n    \"email\": \"micorreo@email.com\"\r\n},\r\n  \"ventaDetalles\": [\r\n   {\r\n    \"producto\":{\r\n    \"id\": 1,\r\n    \"nombre\": \"gaseosa\",\r\n    \"precio\": 15.5\r\n   }}\r\n\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8700/venta/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8700",
+							"path": [
+								"venta",
+								""
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "programador java",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Venta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8700/producto/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8700",
+							"path": [
+								"producto",
+								"1"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "programador java",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
