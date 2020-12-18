@@ -10,5 +10,5 @@ RUN mvn clean install
 
 FROM openjdk:11.0.8-jre-slim
 COPY --from=builder /app/target/soaint-api-0.0.1-SNAPSHOT.jar app.jar
-EXPOSE 9202
+EXPOSE 8700
 CMD ["java", "-jar","/app.jar"]
